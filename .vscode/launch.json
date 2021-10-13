@@ -1,0 +1,34 @@
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch jpack",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}/jpack_demo",
+      "runtimeExecutable": "npm",
+      "windows": { "runtimeExecutable": "npm.cmd" },
+      "runtimeArgs": [ "run", "jpack" ],
+      "console": "integratedTerminal",
+      "protocol": "auto",
+      "restart": true,
+      "port": 9229,
+      "autoAttachChildProcesses": true
+    },
+    {
+      "name": "Launch webpack",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceRoot}/jpack_demo",
+      "runtimeExecutable": "npm",
+      "windows": { "runtimeExecutable": "npm.cmd" },
+      "runtimeArgs": [ "run", "webpack" ],
+      "console": "integratedTerminal",
+      "protocol": "auto",
+      "restart": true,
+      "port": 9229,
+      "autoAttachChildProcesses": true
+    }
+  ]
+}
